@@ -45,7 +45,7 @@ namespace tutorial.Tests.Controllers
             ProductController controller = new ProductController();
 
             // Act
-            Product product = controller.Get(7);
+            Product product = controller.Get(4);
 
             // Assert
             Assert.IsNotNull(product);
