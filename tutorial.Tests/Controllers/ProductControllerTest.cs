@@ -37,5 +37,19 @@ namespace tutorial.Tests.Controllers
             Assert.IsNotNull(product);
             Assert.AreEqual("Chef Anton's Gumbo Mix", product.ProductName);
         }
+
+        [TestMethod]
+        public void GetById2()
+        {
+            // Arrange
+            ProductController controller = new ProductController();
+
+            // Act
+            Product product = controller.Get(7);
+
+            // Assert
+            Assert.IsNotNull(product);
+            Assert.AreEqual("Chef Anton's Gumbo Mix", product.ProductName);
+        }
     }
 }
